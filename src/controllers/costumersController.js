@@ -4,18 +4,18 @@ export async function listCostumers(req, res) {
 
     const {cpf} = req.query;
     const params = [];
-    const cpfRuler = "";
+    const clauseWhere = "";
 
     if (cpf) {
         params.push(`${cpf}%`);
-        cpfRuler += `WHERE cpf ILIKE $${
+        clauseWhere += `WHERE cpf ILIKE $${
             params.length
         }`;
     }
 
     try {
         const result = await database.query(`SELECT * FROM costumers 
-            ${cpfRuler}`, params);
+            ${clauseWhere}`, params);
 
         res.send(result.rows);
 
