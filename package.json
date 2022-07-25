@@ -1,0 +1,27 @@
+{
+  "name": "projeto15-boardcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uenderss/projeto15-boardcamp.git"
+  },
+  "author": "bart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uenderss/projeto15-boardcamp/issues"
+  },
+  "homepage": "https://github.com/Uenderss/projeto15-boardcamp#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
