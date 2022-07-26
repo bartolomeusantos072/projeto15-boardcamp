@@ -1,4 +1,4 @@
-import customerSchema from "../schemas/customersSchema.js"
+import customerSchema from "../schemas/custormersSchema.js"
 
 export function validateCustomer(req,res,next){
    
@@ -8,3 +8,4 @@ export function validateCustomer(req,res,next){
     }
     next();
 }
+

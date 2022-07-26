@@ -1,4 +1,4 @@
-import joi, { required } from "joi";
+import joi from "joi";
 
 const rentalsSchema=joi.object({
     customerId:joi.number().required(),

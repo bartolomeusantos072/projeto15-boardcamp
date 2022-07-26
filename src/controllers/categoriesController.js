@@ -26,6 +26,7 @@ export async function listCategories(req,res){
     }
 
 }
+
 export async function createCategory(req, res){
     const {name} = req.body;
     try{
